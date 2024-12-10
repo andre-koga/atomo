@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent rubber banding */
+  height: 100%;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-700;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[#4f4f58];
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-zinc-800;
+}
